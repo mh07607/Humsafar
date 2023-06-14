@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
       flexDirection: 'column',
       gap: 20,
       flex: 1,
-      backgroundColor: "#FAFAFC",
     }
     ,
     home: {
@@ -38,7 +37,7 @@ const styles = StyleSheet.create({
     },
     cards: {
       flex: 10,
-      gap: 20,
+      gap: 50,
       justifyContent: 'center',
       alignItems: 'center',
     },
