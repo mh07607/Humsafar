@@ -2,7 +2,7 @@ import { React } from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import styles  from './home.style';
 
-const Home = () => {
+const Home = ({ navigation }) => {
     return (
       <View style={styles.top}>
         <View style={styles.home}>
@@ -13,11 +13,18 @@ const Home = () => {
             <Text> Profile </Text>  
           </TouchableOpacity>
         </View>
+
         <View style={styles.cards}>
-          <TouchableOpacity style={styles.card}>
+          <TouchableOpacity 
+            style={styles.card}
+            onPressOut={()=>{
+              navigation.navigate('Details');
+            }}>
             <Text style={{fontSize: 24, color: 'gray'}}>Book a Ride</Text>  
           </TouchableOpacity>
-          <TouchableOpacity style={styles.card}>
+          <TouchableOpacity 
+            style={styles.card}
+           >
             <Text style={{fontSize: 24, color: 'gray'}}>Host a Ride</Text>  
           </TouchableOpacity>
         </View>
