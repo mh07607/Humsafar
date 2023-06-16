@@ -18,7 +18,7 @@ const Home = ({ navigation }) => {
           <TouchableOpacity 
             style={styles.card}
             onPressOut={()=>{
-              navigation.navigate('Details');
+              // navigation.navigate('Details');
             }}>
             <Text style={{fontSize: 24, color: 'gray'}}>Book a Ride</Text>  
           </TouchableOpacity>

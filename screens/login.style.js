@@ -10,7 +10,15 @@ const styles = StyleSheet.create({
         top: -206,
 
         // background: url(.jpg);
-    }
+    },
+    
+    container: {
+        flex: 10, 
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
+    
 });
 
 export default styles;
