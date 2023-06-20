@@ -18,14 +18,6 @@ const Login = ({navigation}) => {
                     flex: 0.3
                 }}>Log In</Text>
 
-                {/* <TextInput 
-                 style={styles.input}
-                 placeholder='Username or email'>
-                </TextInput>
-
-                <TextInput 
-                 style={styles.input}
-                 placeholder='Password'></TextInput> */}
                 <View style={{flex: 1, alignItems: 'center'}}>
                     <IconInput 
                     placeHolder='Username or email'
