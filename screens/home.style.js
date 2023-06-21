@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
       flexDirection: 'column',
       gap: 20,
       flex: 1,
+      backgroundColor: 'white'
     }
     ,
     home: {
@@ -33,12 +34,11 @@ const styles = StyleSheet.create({
       shadowOpacity: 1, 
   
       elevation: 2, //android shadow
-  
     },
     cards: {
-      flex: 10,
-      gap: 50,
-      justifyContent: 'center',
+      flex: 11,
+      gap: 10,
+      justifyContent: 'space-between',
       alignItems: 'center',
     },
     card: {
@@ -57,11 +57,20 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       flex:1,
     },
-    settings: {
-      flex: 1, 
-      justifyContent: 'center',
-      alignItems: 'center',
-    }
+    banner: {
+      position: 'absolute',
+      width: 1000,
+      height: 1000,
+      left: -320,
+      top: -707,
+      backgroundColor: 'aquamarine',
+
+      //background: url(.jpg);
+    },
+    favorites: {
+      flex: 6,
+    },
+
   });
 
 

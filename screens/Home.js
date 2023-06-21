@@ -1,17 +1,13 @@
 import { React } from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import styles  from './home.style';
+import NavBar from '../components/NavBar';
 
 const Home = ({ navigation }) => {
     return (
       <View style={styles.top}>
-        <View style={styles.home}>
-          <TouchableOpacity> 
-            <Text> Settings </Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text> Profile </Text>  
-          </TouchableOpacity>
+        <View style={{flex: 13  }}>
+                <View style={styles.banner}></View>
         </View>
 
         <View style={styles.cards}>
@@ -23,14 +19,14 @@ const Home = ({ navigation }) => {
             <Text style={{fontSize: 24, color: 'gray'}}>Book a Ride</Text>  
           </TouchableOpacity>
           <TouchableOpacity 
-            style={styles.card}
-           >
+            style={styles.card}>
             <Text style={{fontSize: 24, color: 'gray'}}>Host a Ride</Text>  
           </TouchableOpacity>
         </View>
-        <TouchableOpacity style = {styles.settings}>
-          <Text style={{fontSize: 16, color: 'gray'}}>Help</Text>
-        </TouchableOpacity>
+        <View style={styles.favorites}> 
+            <Text> Favorites </Text>
+        </View>
+        <NavBar />
       </View>
     );
 }

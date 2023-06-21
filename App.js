@@ -2,6 +2,9 @@ import {React} from 'react';
 import Home  from './screens/Home';
 import Login  from './screens/Login';
 import CreateAccount from './screens/CreateAccount';
+import OtpChoice from './screens/OtpChoice';
+import Otp from './screens/Otp';
+
 // import {View, Text, TouchableOpacity} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -31,11 +34,32 @@ const App = () => {
           headerShadowVisible: false,
           headerStyle: {backgroundColor: "#FAFAFC"}
          }} />
+      
+      <Stack.Screen 
+        name="OtpChoice" 
+        component={OtpChoice}
+        options = {{
+          headerTitle: "OtpChoice",
+          headerShown: false,
+          headerShadowVisible: false,
+          headerStyle: {backgroundColor: "#FAFAFC"}
+         }} />
+      
+      <Stack.Screen 
+        name="Otp" 
+        component={Otp}
+        options = {{
+          headerTitle: "Otp",
+          headerShown: false,
+          headerShadowVisible: false,
+          headerStyle: {backgroundColor: "#FAFAFC"}
+         }} />
 
       <Stack.Screen name="Home"
        component={Home}
        options = {{
-        headerTitle: "",
+        headerTitle: "Home",
+        headerShown: false,
         headerShadowVisible: false,
         headerStyle: {backgroundColor: "#FAFAFC"}
        }}

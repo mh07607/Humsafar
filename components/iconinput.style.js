@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native"
 const styles = StyleSheet.create({
     input: {
         // elevation: 2,
-        width: 300,
+        width: 270,
         fontSize: 18,
     },
     line:{
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingTop: 2,
         padding: 8,
-        paddingBottom: 15,
+        paddingBottom: 20,
 
         shadowColor: "#000", //ios
         shadowOffset: {
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.22,
         shadowRadius: 2.22,
 
-        elevation: 3, //android
+        elevation: 4, //android
 
         borderRadius: 10,
         backgroundColor: 'white',
