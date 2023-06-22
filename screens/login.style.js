@@ -2,16 +2,19 @@ import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
     loginBanner: {
-        backgroundColor: 'aquamarine',
+        // backgroundColor: 'aquamarine',
         position: 'absolute',
-        width: 606,
-        height: 606,
-        left: -123,
-        top: -206,
-
-        // background: url(.jpg);
+        width: '100%',
+        height: '100%',
+        // left: -123,
+        top: -56,
+        
+        // // background: url("https://wallpaperaccess.com/full/2431350.jpg"),
     },
-    
+    overlay: {
+        ...StyleSheet.absoluteFillObject,
+        backgroundColor: 'white',
+    },
     container: {
         flex: 10, 
         justifyContent: 'center',

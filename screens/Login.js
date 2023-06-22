@@ -1,15 +1,19 @@
-import {React} from 'react';
-import {View, Text, TouchableOpacity, StatusBar} from 'react-native';
+import React, {useState} from 'react';
+import {View, Text, TouchableOpacity, StatusBar, ImageBackground, Image} from 'react-native';
 import IconInput from '../components/IconInput';
 
 import styles from './login.style';
 
+const image = require('../icons/Ellipse.png');
 
 const Login = ({navigation}) => {
     return (
-        <View style={{flex: 1, marginTop: StatusBar.currentHeight, backgroundColor: 'white'}}>
-            <View style={{flex: 12  }}>
-                <View style={styles.loginBanner}></View>
+        <View style={{flex: 1,  backgroundColor: 'white'}}>
+            <View style={{flex: 12}}>
+                <ImageBackground source={image} style={styles.loginBanner}  />
+                {/* <View style={styles.loginBanner}>
+                    
+                </View> */}
             </View>
                 
             <View style={styles.container}>
@@ -49,13 +53,17 @@ const Login = ({navigation}) => {
                     </TouchableOpacity>
 
                     <TouchableOpacity style={{flex: 1}}
-                     onPressOut={() => {navigation.navigate('CreateAccount');}}>
+                     onPressOut={() => onBtnClick(navigation)}>
                         <Text style={{color: 'blue', fontSize: 18}}>Don't have an account? Sign up!</Text>
                     </TouchableOpacity>
                 </View>
             </View>
         </View>
     );
+}
+
+function onBtnClick(navigation){
+    navigation.navigate('CreateAccount');
 }
 
 export default Login;

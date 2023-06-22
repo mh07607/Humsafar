@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./otp.style";
-import OTPInputView from '@twotalltotems/react-native-otp-input';
+// import OTPInputView from '@twotalltotems/react-native-otp-input';
 import { View } from "react-native";
 
 const Otp = () => {
