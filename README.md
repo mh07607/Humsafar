@@ -1,2 +1,2 @@
-A weather app for practicing working with react-native
+A hypothetical ridesharing app for practicing working with react-native
 
